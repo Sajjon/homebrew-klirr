@@ -14,7 +14,12 @@ class Klirr < Formula
   end
 
   def install
-    bin.install "klirr"
+    on_macos do
+      bin.install "klirr-aarch64-apple-darwin" => "klirr"
+    end
+    on_linux do
+      bin.install "klirr-x86_64-unknown-linux-gnu" => "klirr"
+    end
   end
 
   test do
