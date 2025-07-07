@@ -1,5 +1,5 @@
 class Klirr < Formula
-  desc "Generate invoice with auto invoice number setting & working days calc."
+  desc "Generate invoice with auto invoice number setting & working days calc"
   homepage "https://github.com/Sajjon/klirr"
   version "0.1.22"
 
