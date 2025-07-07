@@ -15,6 +15,6 @@ class Klirr < Formula
   end
 
   test do
-    system "#{bin}/klirr", "--help"
+    system bin/"klirr", "--help"
   end
 end
