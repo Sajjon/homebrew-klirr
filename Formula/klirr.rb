@@ -1,15 +1,15 @@
 class Klirr < Formula
   desc "Generate invoice with auto invoice number setting & working days calc"
   homepage "https://github.com/Sajjon/klirr"
-  url "https://github.com/Sajjon/klirr/releases/download/v0.2.12/klirr-aarch64-apple-darwin"
-  sha256 "0a834acfe282733dd89fb61aa3ee1cbc0bfd8e044b690e3c6eab7627f224c35c"
+  url "https://github.com/Sajjon/klirr/releases/download/v0.2.13/klirr-aarch64-apple-darwin"
+  sha256 "a752ae2947ade6bc02459dd3a3d10929a4371f0445e791dcddf1820bc4e3cec6"
 
   def install
     if OS.mac?
       bin.install "klirr-aarch64-apple-darwin" => "klirr"
     elsif OS.linux?
-      url "https://github.com/Sajjon/klirr/releases/download/v0.2.12/klirr-x86_64-unknown-linux-gnu"
-      sha256 "25098e41006e4def0a220d48607f7733bb09c4ced28629bc55cbde7450cf4d7a"
+      url "https://github.com/Sajjon/klirr/releases/download/v0.2.13/klirr-x86_64-unknown-linux-gnu"
+      sha256 "dc7667087032c79eb9116a74a01586bf634b69664d2e35925d410e6be1465db4"
       bin.install "klirr-x86_64-unknown-linux-gnu" => "klirr"
     end
   end
